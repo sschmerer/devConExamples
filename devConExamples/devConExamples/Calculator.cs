@@ -30,5 +30,12 @@ namespace devConExamples
 
          _actions.Add( subtractor );
       }
+
+      public void MultipyThis( int newNumber )
+      {
+         var multiplier = new Multiplier( newNumber );
+
+         _actions.Add( multiplier );
+      }
    }
 }
