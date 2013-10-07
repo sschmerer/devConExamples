@@ -2,9 +2,16 @@
 {
    public class Subtractor : IAction
    {
+      private int _operand;
+
+      public Subtractor( int operand )
+      {
+         _operand = operand;
+      }
+
       public int Evaluate( int incomingOperand )
       {
-         throw new System.NotImplementedException();
+         return incomingOperand - _operand;
       }
    }
 }
