@@ -7,5 +7,6 @@ namespace devConExamples
 {
    public interface IOperation
    {
+      int Evaluate( int incomingOperand );
    }
 }
