@@ -44,5 +44,10 @@ namespace devConExamples
 
          _actions.Add( divider );
       }
+
+      public void Undo()
+      {
+         _actions.RemoveAt( _actions.Count - 1 );
+      }
    }
 }
