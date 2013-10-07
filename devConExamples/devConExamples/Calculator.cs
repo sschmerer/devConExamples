@@ -12,5 +12,11 @@ namespace devConExamples
       {
          return left - right;
       }
+
+      // Simple add method
+      public int Add( int left, int right )
+      {
+         return left + right;
+      }
    }
 }
