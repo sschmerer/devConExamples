@@ -7,6 +7,6 @@ namespace devConExamples
 {
    public interface IAction
    {
-      int Evaluate( int left, int right );
+      int Evaluate( int incomingOperand );
    }
 }
