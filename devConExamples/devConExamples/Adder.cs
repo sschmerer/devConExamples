@@ -3,9 +3,16 @@ namespace devConExamples
 {
    public class Adder : IAction
    {
-      public int Evaluate( int left, int right )
+      private int _operand;
+
+      public Adder( int newNumber )
       {
-         throw new System.NotImplementedException();
+         _operand = newNumber;
+      }
+
+      public int Evaluate( int incomingOperand )
+      {
+         return incomingOperand + _operand;
       }
    }
 }
