@@ -1,7 +1,7 @@
 ﻿
 namespace devConExamples
 {
-   public class Adder : IAction
+   public class Adder : IOperation
    {
       private int _operand;
 
