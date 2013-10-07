@@ -7,7 +7,7 @@ namespace devConExamples
 {
    public class Calculator
    {
-      // Simple subtrction method
+      // Simple subtraction method
       public int Subtract( int left, int right )
       {
          return left - right;
