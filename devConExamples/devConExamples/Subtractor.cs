@@ -1,6 +1,6 @@
 ﻿namespace devConExamples
 {
-   public class Subtractor : IAction
+   public class Subtractor : IOperation
    {
       private int _operand;
 
