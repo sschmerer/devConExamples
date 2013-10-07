@@ -4,7 +4,7 @@ namespace devConExamples
 {
    public class Calculator
    {
-      private List<IAction> _actions;
+      private List<IOperation> _actions;
 
       public int RunEvaulations()
       {

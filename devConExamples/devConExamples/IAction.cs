@@ -5,7 +5,7 @@ using System.Text;
 
 namespace devConExamples
 {
-   public interface IAction
+   public interface IOperation
    {
       int Evaluate( int incomingOperand );
    }
