@@ -23,5 +23,12 @@ namespace devConExamples
 
          _actions.Add( adder );
       }
+
+      public void SubtractThis( int newNumber )
+      {
+         var subtractor = new Subtractor( newNumber );
+
+         _actions.Add( subtractor );
+      }
    }
 }
