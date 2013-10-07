@@ -37,5 +37,12 @@ namespace devConExamples
 
          _actions.Add( multiplier );
       }
+
+      public void DivideThis( int newNumber )
+      {
+         var divider = new Divider( newNumber );
+
+         _actions.Add( divider );
+      }
    }
 }
