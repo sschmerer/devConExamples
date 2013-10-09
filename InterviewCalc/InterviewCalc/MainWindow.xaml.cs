@@ -20,6 +20,8 @@ namespace InterviewCalc
       {
          int digit = int.Parse( ( (Button) sender ).Content.ToString() );
          _firstNumber = (_firstNumber*10) + digit;
+
+         TheDisplay.Content = _firstNumber.ToString();
       }
    }
 }
