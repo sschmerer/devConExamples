@@ -9,6 +9,14 @@ namespace calcKata
       [TestMethod]
       public void TestMethod1()
       {
+         string input = "";
+         int result = returnZero(input);
+         Assert.AreEqual( 0, result );
+      }
+
+      private int returnZero( string input )
+      {
+         return 0;
       }
    }
 }
