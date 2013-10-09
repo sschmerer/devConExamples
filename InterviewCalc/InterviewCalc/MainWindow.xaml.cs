@@ -59,6 +59,10 @@ namespace InterviewCalc
          {
             result = _firstNumber - _secondNumber;
          }
+         else if ( _operator == "*" )
+         {
+            result = _firstNumber * _secondNumber;
+         }
 
          _operator = string.Empty;
          _firstNumber = 0;
