@@ -15,6 +15,7 @@ namespace InterviewCalc
       }
 
       private int _firstNumber = 0;
+      private string _operator;
 
       void onClickNumber( object sender, RoutedEventArgs e )
       {
@@ -22,6 +23,13 @@ namespace InterviewCalc
          _firstNumber = (_firstNumber*10) + digit;
 
          TheDisplay.Content = _firstNumber.ToString();
+      }
+
+      void onClickOperator( object sender, RoutedEventArgs e )
+      {
+         _operator = ( (Button) sender ).Content.ToString();
+
+         TheDisplay.Content = _firstNumber.ToString() + _operator;
       }
    }
 }
