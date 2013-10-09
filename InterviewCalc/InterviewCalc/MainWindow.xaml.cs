@@ -13,5 +13,12 @@ namespace InterviewCalc
       {
          InitializeComponent();
       }
+
+      private int _firstNumber;
+
+      void onClickNumber( object sender, RoutedEventArgs e )
+      {
+         _firstNumber = int.Parse( ( (Button) sender ).Content.ToString() );
+      }
    }
 }

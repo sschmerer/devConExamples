@@ -3,15 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="1" HorizontalAlignment="Left" Margin="84,40,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="2" HorizontalAlignment="Left" Margin="175,40,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="3" HorizontalAlignment="Left" Margin="268,40,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="4" HorizontalAlignment="Left" Margin="84,78,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="5" HorizontalAlignment="Left" Margin="175,78,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="6" HorizontalAlignment="Left" Margin="268,78,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="7" HorizontalAlignment="Left" Margin="84,116,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="8" HorizontalAlignment="Left" Margin="175,116,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="9" HorizontalAlignment="Left" Margin="268,116,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="84,40,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="175,40,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber" />
+        <Button Content="3" HorizontalAlignment="Left" Margin="268,40,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber" />
+        <Button Content="4" HorizontalAlignment="Left" Margin="84,78,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber" />
+        <Button Content="5" HorizontalAlignment="Left" Margin="175,78,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="268,78,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="84,116,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="175,116,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="268,116,0,0" VerticalAlignment="Top" Width="75" Click="onClickNumber"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="348,40,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="348,78,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="*" HorizontalAlignment="Left" Margin="348,116,0,0" VerticalAlignment="Top" Width="75"/>
