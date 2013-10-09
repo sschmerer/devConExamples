@@ -39,6 +39,7 @@ namespace InterviewCalc
       void onClickOperator( object sender, RoutedEventArgs e )
       {
          _operator = ( (Button) sender ).Content.ToString();
+         _secondNumber = 0;
 
          TheDisplay.Content = _firstNumber.ToString() + _operator;
       }
