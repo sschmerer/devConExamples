@@ -45,7 +45,14 @@ namespace InterviewCalc
 
       void onClickEvaluate( object sender, RoutedEventArgs e )
       {
-         TheDisplay.Content = evaluate();
+         try
+         {
+            TheDisplay.Content = evaluate();
+         }
+         catch ( Exception )
+         {
+            TheDisplay.Content = "Cannot divide by zero"; 
+         }
       }
 
       int evaluate()
@@ -63,6 +70,10 @@ namespace InterviewCalc
                result = _firstNumber * _secondNumber;
                break;
             case "/":
+               if ( _secondNumber == 0 )
+               {
+                  throw new DivideByZeroException();
+               }
                result = _firstNumber / _secondNumber;
                break;
          }
