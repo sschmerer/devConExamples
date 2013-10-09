@@ -43,6 +43,26 @@ namespace InterviewCalc
          TheDisplay.Content = _firstNumber.ToString() + _operator;
       }
 
+      void onClickEvaluate( object sender, RoutedEventArgs e )
+      {
+         TheDisplay.Content = evaluate();
+      }
+
+      int evaluate()
+      {
+         int result = 0;
+         if ( _operator == "+" )
+         {
+            result = _firstNumber + _secondNumber;
+         }
+
+         _operator = string.Empty;
+         _firstNumber = 0;
+         _secondNumber = 0;
+
+         return result;
+      }
+
       int appendButtonContentAsDigitToNumber( Button button, int number )
       {
          int digit = int.Parse( button.Content.ToString() );
