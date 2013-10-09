@@ -53,7 +53,11 @@ namespace InterviewCalc
          int result = 0;
          if ( _operator == "+" )
          {
-            result = _firstNumber + _secondNumber;
+            result = _firstNumber + 2*_secondNumber;
+         }
+         else if ( _operator == "-" )
+         {
+            result = _firstNumber - _secondNumber;
          }
 
          _operator = string.Empty;
