@@ -51,17 +51,20 @@ namespace InterviewCalc
       int evaluate()
       {
          int result = 0;
-         if ( _operator == "+" )
+         switch ( _operator )
          {
-            result = _firstNumber + 2*_secondNumber;
-         }
-         else if ( _operator == "-" )
-         {
-            result = _firstNumber - _secondNumber;
-         }
-         else if ( _operator == "*" )
-         {
-            result = _firstNumber * _secondNumber;
+            case "+":
+               result = _firstNumber + 2*_secondNumber;
+               break;
+            case "-":
+               result = _firstNumber - _secondNumber;
+               break;
+            case "*":
+               result = _firstNumber * _secondNumber;
+               break;
+            case "/":
+               result = _firstNumber / _secondNumber;
+               break;
          }
 
          _operator = string.Empty;
